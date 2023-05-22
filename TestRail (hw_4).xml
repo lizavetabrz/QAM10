@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Создание аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Зайти на сайт https://www.testrail.com/</preconds>
+										<steps_separated><step>
+<index>1</index><content>Кликнуть на кнопку &quot;Try TestRail&quot;</content><expected>Открыто окно регистрации</expected></step>
+<step>
+<index>2</index><content>Ввести &quot;Lizaveta&quot; в текстовом поле &quot;First Name&quot;</content><expected>Текст &quot;Lizaveta&quot; отображен в поле &quot;First Name&quot;</expected></step>
+<step>
+<index>3</index><content>Ввести &quot;Barazna&quot; в текстовом поле &quot;Last Name&quot;</content><expected>Текст &quot;Barazna&quot; отображен в поле &quot;Last Name&quot;</expected></step>
+<step>
+<index>4</index><content>Ввести &quot;elisabethtest@mail.ru&quot; в текстовом поле &quot;Work Email&quot;</content><expected>Текст &quot;elisabethtest@mail.ru&quot; отображен в поле &quot;Work Email&quot;</expected></step>
+<step>
+<index>5</index><content>Ввести &quot;TeachMeSkills&quot; в текстовом поле &quot;Company name&quot;</content><expected>Текст &quot;TeachMeSkills&quot; отображен в поле &quot;Company name&quot;</expected></step>
+<step>
+<index>6</index><content>Кликнуть на строку &quot;Country&quot;</content><expected>Открыт список стран</expected></step>
+<step>
+<index>7</index><content>Выбрать &quot;Belarus&quot;</content><expected>Страна Belarus выбрана</expected></step>
+<step>
+<index>8</index><content>Кликнуть на строку под &quot;How many users do you expect to access TestRail?&quot;</content><expected>Открыт список с числами</expected></step>
+<step>
+<index>9</index><content>Выбрать &quot;10&quot;</content><expected>Значение &quot;10&quot; выбрано</expected></step>
+<step>
+<index>10</index><content>Ввести &quot;lizavetabrz&quot; в текстовом поле &quot;Web Address&quot;</content><expected>Текст &quot;lizavetabrz&quot; отображен в поле &quot;Web Address&quot;</expected></step>
+<step>
+<index>11</index><content>Кликнуть на чекбокс &quot;I agree to the TestRail Cloud Terms of Service, the Gurock Privacy Policy and the Gurock Data Processing Agreement (&amp;ldquo;DPA&amp;rdquo;)&quot;</content><expected>В чекбоксе стоит галочка</expected></step>
+<step>
+<index>12</index><content>Кликнуть на &quot;Create Account&quot;</content><expected>Пользователь зарегистрирован</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Подтверждение аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Зайти на email elisabethtest@mail.ru</preconds>
+										<steps_separated><step>
+<index>1</index><content>Открыть письмо с ссылкой на подтверждение аккаунта</content><expected>Письмо открыто</expected></step>
+<step>
+<index>2</index><content>Перейти по ссылке</content><expected>Пользователь переадресован на страницу для создания пароля</expected></step>
+<step>
+<index>3</index><content>Ввести &quot;Lizaveta12345!&quot; в текстовом поле &quot;Password&quot;</content><expected>Пароль введен</expected></step>
+<step>
+<index>4</index><content>Ввести &quot;Lizaveta12345!&quot; в текстовом поле &quot;Сonfirm password&quot;</content><expected>Текст &quot;Lizaveta12345!&quot; введен в поле &quot;Сonfirm password&quot;</expected></step>
+<step>
+<index>5</index><content>Кликнуть на кнопку &quot;Save&quot;</content><expected>Пользователь переадресован на свой аккаунт</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Авторизация</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Зайти на сайт https://secure.testrail.com/</preconds>
+										<steps_separated><step>
+<index>1</index><content>Ввести &quot;elisabethtest@mail.ru&quot; в текстовом поле &quot;Email&quot;</content><expected>Email введен</expected></step>
+<step>
+<index>2</index><content>Ввести пароль &quot;Liza12345!&quot;</content><expected>Пароль введен</expected></step>
+<step>
+<index>3</index><content>Кликнуть на &quot;Log in&quot;</content><expected>Пользователь залогинен и переадресован на свой аккаунт</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Создание тест-кейса</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Зайти на сайт https://lizavetabrz.testrail.io/</preconds>
+										<steps_separated><step>
+<index>1</index><content>Кликнуть на раздел &quot;Test Cases&quot;</content><expected>Открыта страница с тест-кейсами</expected></step>
+<step>
+<index>2</index><content>Кликнуть Add Case</content><expected>Открыта страница создания тест-кейса</expected></step>
+<step>
+<index>3</index><content>Ввести &quot;Тест-кейс 1&quot; в строке &quot;Title&quot;</content><expected>Название &quot;Тест-кейс 1&quot; введено</expected></step>
+<step>
+<index>4</index><content>Кликнуть на строку &quot;Type&quot; </content><expected>Появился список типов тест-кейсов</expected></step>
+<step>
+<index>5</index><content>Выбрать &quot;Functional&quot;</content><expected>Тип &quot;Functional&quot; выбран</expected></step>
+<step>
+<index>6</index><content>Кликнуть &quot;Add Test Case&quot;</content><expected>Тест-кейс создан</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
